@@ -1,0 +1,300 @@
+:root {
+  --main-bg: #050a30;
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url("../fonts/Montserrat-Black.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: mons;
+  src: url("../fonts/MONS.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: becool;
+  src: url("../fonts/iCielBeCool-Regular.otf");
+  font-display: swap;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--main-bg);
+  color: white;
+  font-family: "montserrat";
+  text-justify: ;
+}
+
+/* || INTRO */
+
+.intro {
+  width: 100%;
+  min-height: 150vh;
+  overflow: hidden;
+  position: relative;
+  background: #ae4424;
+}
+
+.intro__img {
+  width: 100%;
+  height: 140vh;
+  position: absolute;
+  object-fit: cover;
+}
+
+.intro__mountain-5 {
+  width: 100%;
+  height: calc(150vh + 10px);
+  z-index: 1;
+  object-fit: fill;
+}
+
+.intro__standing {
+  z-index: 1;
+  bottom: -5vh;
+  left: -10vw;
+}
+
+.intro__tree-left {
+  width: 50%;
+  left: 0px;
+  z-index: 1;
+}
+
+.intro__tree-right-2 {
+  right: 0px;
+}
+
+.intro__ladder {
+  position: absolute;
+  width: 45%;
+  object-fit: cover;
+  left: 25vw;
+  top: 5vh;
+}
+
+/* || CLOUD */
+
+.cloud {
+  background-image: linear-gradient(#ae4424, var(--main-bg));
+  position: relative;
+}
+
+.cloud__image {
+  width: 100%;
+  mix-blend-mode: screen;
+}
+
+.cloud__logo {
+  width: 60vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* || TITLE */
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title__tdtu {
+  font-size: calc(24px + 3vw);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b9b7e9, 0 0 40px #b9b7e9, 0 0 50px #b9b7e9,
+    0 0 60px #b9b7e9;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.title__it {
+  font-size: calc(12px + 3vw);
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* || LETTERS */
+
+.letters {
+  width: 100%;
+}
+
+.letter {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5vh;
+}
+
+.letter__background-img {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  mix-blend-mode: screen;
+  object-fit: contain;
+  z-index: -1;
+}
+.letter__background-img--moon {
+  width: 40vw;
+}
+.letter__background-img--over {
+  mix-blend-mode: normal;
+}
+
+.letter__frame {
+  width: 60vw;
+  min-width: 300px;
+  max-width: 600px;
+  float: right;
+  margin-right: 10vw;
+  margin-bottom: 5vh;
+}
+
+.letter__title {
+  margin-bottom: 8px;
+  font-size: calc(20px + 0.4vw);
+}
+
+.letter__text {
+  font-size: calc(14px + 0.4vw);
+  background: rgb(170, 173, 192, 0.7);
+  padding: 24px;
+  border-radius: 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.letter__text--night {
+  background: rgb(77, 86, 148, 0.7);
+  box-shadow: rgb(103, 102, 116, 0.7) 20px 20px;
+}
+
+.letter__text--day {
+  background: rgb(126, 114, 86, 0.7);
+  box-shadow: rgb(103, 102, 116, 0.7) 20px 20px;
+}
+
+/* || TIMELINE */
+
+.timeline {
+  background: linear-gradient(#fff, #fff) no-repeat center/2px 100%;
+  margin: 24px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timeline__background-images {
+  width: 100%;
+  position: absolute;
+  top: 10vh;
+  opacity: 0.4;
+}
+
+.timeline__background-image {
+  width: 100%;
+}
+
+.timeline__year {
+  font-size: calc(64px + 5vw);
+  font-family: "mons";
+  background-color: var(--main-bg);
+  padding: 24px 0px;
+  margin: 24px 0px;
+}
+
+.timeline__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 80px;
+  align-items: center;
+  margin: 12px 0px;
+}
+
+.timeline__img-container {
+  position: relative;
+}
+
+.timeline__img {
+  width: 80%;
+  min-width: 300px;
+  border-radius: 24px;
+  float: right;
+  z-index: 1;
+}
+.timeline__content--reversed .timeline__img {
+  float: left;
+}
+.timeline__img--summer-2015 {
+  width: 130%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: translate(-20%, 40%);
+  z-index: 2;
+}
+.timeline__img--mr-phuc {
+  width: 25vw;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+}
+
+.timeline__text {
+  font-family: "becool";
+  font-size: calc(18px + 2vw);
+  color: #5cb6f9;
+  margin: 12px;
+  max-width: 40vw;
+  z-index: -1;
+}
+.timeline__content--reversed .timeline__text {
+  justify-self: end;
+  text-align: right;
+}
+
+/* || ENDING */
+
+.ending {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ending__header {
+  font-size: calc(32px + 1vw);
+}
+
+.ending__text {
+  width: 60%;
+  background: #73768e;
+  padding: 24px;
+  border-radius: 24px;
+  font-size: calc(16px + 0.4vw);
+  text-align: justify;
+  text-justify: inter-word;
+}

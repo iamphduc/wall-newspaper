@@ -1,0 +1,80 @@
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  /* || INTRO */
+
+  .intro {
+    min-height: initial;
+  }
+
+  .intro__img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+  }
+
+  .intro__background {
+    position: static;
+    width: 130%;
+  }
+
+  .intro__standing {
+    z-index: 1;
+    left: -10vw;
+  }
+
+  .intro__mountain-5 {
+    z-index: 1;
+  }
+
+  /* || LETTER */
+
+  .letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .letter__frame {
+    margin-right: 0;
+  }
+
+  /* || TIMELINE */
+
+  .timeline__content {
+    background-color: #050a30;
+    column-gap: 0px;
+    place-items: center;
+  }
+
+  .timeline__img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .timeline__img--summer-2015 {
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 30%);
+  }
+  .timeline__img--mr-phuc {
+    width: 40vw;
+    right: -5vw;
+  }
+
+  .timeline__text {
+    max-width: none;
+    justify-self: center;
+    text-align: center;
+    z-index: 1;
+    grid-row: 2/3;
+  }
+
+  .timeline__content--reversed .timeline__text {
+    max-width: none;
+    justify-self: center;
+    text-align: center;
+  }
+}
