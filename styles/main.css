@@ -175,21 +175,11 @@ body {
 .feeling__background-img {
   width: 100%;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   mix-blend-mode: screen;
-  object-fit: contain;
   z-index: -1;
-}
-
-.feeling__background-img--moon {
-  width: 40vw;
-  right: 0px;
-  margin-left: auto;
-  object-fit: cover;
-}
-.feeling__background-img--over {
-  mix-blend-mode: normal;
 }
 
 .feeling__frame {
@@ -211,9 +201,17 @@ body {
   font-size: calc(22px + 0.4vw);
   font-family: "becool";
   text-align: center;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--secondary-bg),
-    0 0 40px var(--secondary-bg), 0 0 50px var(--secondary-bg);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(127, 145, 170, 0.7),
+    0 0 40px rgb(127, 145, 170, 0.7), 0 0 50px rgb(127, 145, 170, 0.7);
   line-height: 150%;
+}
+.feeling__title--qdc {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(126, 114, 86, 0.7),
+    0 0 40px rgb(126, 114, 86, 0.7), 0 0 50px rgb(126, 114, 86, 0.7);
+}
+.feeling__title--khoi {
+  text-shadow: 0 0 10px rgb(77, 86, 148, 0.7), 0 0 20px rgb(77, 86, 148, 0.7), 0 0 30px #fff,
+    0 0 40px #fff, 0 0 50px #fff;
 }
 
 .feeling__text {
@@ -224,11 +222,11 @@ body {
   border-radius: 24px;
   text-align: justify;
 }
-.feeling__text--night {
-  background: rgb(77, 86, 148, 0.7);
-}
-.feeling__text--day {
+.feeling__text--qdc {
   background: rgb(126, 114, 86, 0.7);
+}
+.feeling__text--khoi {
+  background: rgb(77, 86, 148, 0.7);
 }
 
 .feeling__signature {
@@ -269,7 +267,6 @@ body {
   font-family: "mons";
   padding: 12px 0px;
   margin: 24px 0px;
-  /* mix-blend-mode: screen; */
   background: var(--main-bg);
   border-radius: 100%;
 }
@@ -372,6 +369,7 @@ body {
 
 .ending__header {
   font-size: calc(32px + 1vw);
+  margin-bottom: 0px;
 }
 
 .ending__text {

@@ -37,9 +37,15 @@
     align-items: center;
   }
 
+  .feeling__background-img {
+    top: initial;
+    left: 0;
+    bottom: 0;
+    transform: none;
+  }
+
   .feeling__frame {
-    margin-right: 5vw;
-    margin-left: 0;
+    margin: 0px 5vw 15vh 0px;
   }
 
   /* || TIMELINE */
