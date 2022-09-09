@@ -254,7 +254,7 @@ body {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  transform: translate(-20%, 40%);
+  transform: translate(-20%, 30%);
   z-index: 2;
 }
 .timeline__img--mr-phuc {
