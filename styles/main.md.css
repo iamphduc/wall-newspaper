@@ -29,15 +29,15 @@
     z-index: 1;
   }
 
-  /* || LETTER */
+  /* || FEELING */
 
-  .letter {
+  .feeling {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .letter__frame {
+  .feeling__frame {
     margin-right: 0;
   }
 

@@ -94,9 +94,9 @@ window.onload = () => {
     },
   });
 
-  // ===== LETTER ===== //
+  // ===== FEELING ===== //
 
-  lax.addElements(".letter__frame", {
+  lax.addElements(".feeling__frame", {
     scrollY: {
       opacity: [
         ["elInY", "elCenterY"],
