@@ -250,15 +250,15 @@ body {
   position: relative;
 }
 
-.timeline__background-images {
+.timeline__background-imgs {
   width: 100%;
   position: absolute;
   top: 10vh;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: -1;
 }
 
-.timeline__background-image {
+.timeline__background-img {
   width: 100%;
 }
 
