@@ -138,6 +138,10 @@ body {
   overflow: hidden;
   margin-top: 5vh;
 }
+.letter--main {
+  display: flex;
+  justify-content: center;
+}
 
 .letter__background-img {
   width: 100%;
@@ -147,6 +151,15 @@ body {
   mix-blend-mode: screen;
   object-fit: contain;
   z-index: -1;
+}
+.letter--main .letter__background-img {
+  width: 100vw;
+  position: static;
+  object-fit: cover;
+  opacity: 0.3;
+}
+.letter__background-img--moon {
+  object-fit: cover;
 }
 .letter__background-img--moon {
   width: 40vw;
@@ -163,10 +176,27 @@ body {
   margin-right: 10vw;
   margin-bottom: 5vh;
 }
+.letter--main .letter__frame {
+  width: 70%;
+  max-width: initial;
+  float: initial;
+  margin: 0px;
+  position: absolute;
+  top: 10%;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
 
 .letter__title {
   margin-bottom: 8px;
   font-size: calc(20px + 0.4vw);
+}
+.letter--main .letter__title {
+  font-size: calc(48px + 1.5vw);
+  font-family: "becool";
+  text-align: center;
+  margin-bottom: 10vw;
 }
 
 .letter__text {
@@ -175,6 +205,10 @@ body {
   padding: 24px;
   border-radius: 24px;
   text-align: justify;
+}
+.letter--main .letter__text {
+  font-size: calc(20px + 0.4vw);
+  background: rgb(170, 173, 192, 0.4);
 }
 
 .letter__text--night {
