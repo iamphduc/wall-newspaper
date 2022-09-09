@@ -1,5 +1,6 @@
 :root {
   --main-bg: #050a30;
+  --secondary-bg: #ae4424;
 }
 
 @font-face {
@@ -41,7 +42,7 @@ body {
   min-height: 150vh;
   overflow: hidden;
   position: relative;
-  background: #ae4424;
+  background: var(--secondary-bg);
 }
 
 .intro__img {
@@ -85,7 +86,7 @@ body {
 /* || CLOUD */
 
 .cloud {
-  background-image: linear-gradient(#ae4424, var(--main-bg));
+  background-image: linear-gradient(var(--secondary-bg), var(--main-bg));
   position: relative;
 }
 
@@ -111,14 +112,14 @@ body {
 }
 
 .cloud__unit {
-  color: #ae4424;
+  color: var(--secondary-bg);
   font-size: calc(8px + 1.2vw);
   text-align: center;
   margin-bottom: 4px;
 }
 
 .cloud__group {
-  color: #ae4424;
+  color: var(--secondary-bg);
   font-size: calc(8px + 1.5vw);
   text-align: center;
   margin-top: 4px;
@@ -164,7 +165,7 @@ body {
 .letter__background-img {
   width: 100%;
   object-fit: contain;
-  opacity: 0.4;
+
   position: absolute;
   top: 0px;
   left: 0px;
@@ -214,10 +215,10 @@ body {
 }
 
 .feeling__background-img--moon {
-  object-fit: cover;
-}
-.feeling__background-img--moon {
   width: 40vw;
+  right: 0px;
+  margin-left: auto;
+  object-fit: cover;
 }
 .feeling__background-img--over {
   mix-blend-mode: normal;
@@ -228,29 +229,42 @@ body {
   min-width: 300px;
   max-width: 600px;
   float: right;
-  margin-right: 10vw;
-  margin-bottom: 5vh;
+  margin-right: 8vw;
+  margin-bottom: 8vh;
+}
+.feeling__frame--reversed {
+  margin-right: 0px;
+  margin-left: 8vw;
+  float: left;
 }
 
 .feeling__title {
   margin-bottom: 8px;
-  font-size: calc(20px + 0.4vw);
+  font-size: calc(22px + 0.4vw);
+  font-family: "becool";
+  text-align: center;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--secondary-bg),
+    0 0 40px var(--secondary-bg), 0 0 50px var(--secondary-bg), 0 0 60px var(--secondary-bg);
 }
 
 .feeling__text {
   font-size: calc(14px + 0.4vw);
-  background: rgb(170, 173, 192, 0.7);
+  background: rgb(127, 145, 170, 0.7);
+  box-shadow: rgb(103, 102, 116, 0.7) 20px 20px;
   padding: 24px;
   border-radius: 24px;
   text-align: justify;
 }
 .feeling__text--night {
   background: rgb(77, 86, 148, 0.7);
-  box-shadow: rgb(103, 102, 116, 0.7) 20px 20px;
 }
 .feeling__text--day {
   background: rgb(126, 114, 86, 0.7);
-  box-shadow: rgb(103, 102, 116, 0.7) 20px 20px;
+}
+
+.feeling__signature {
+  font-size: calc(11px + 0.4vw);
+  font-style: italic;
 }
 
 /* || TIMELINE */

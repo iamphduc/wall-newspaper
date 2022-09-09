@@ -99,7 +99,7 @@ window.onload = () => {
   lax.addElements(".feeling__frame", {
     scrollY: {
       opacity: [
-        ["elInY", "elCenterY"],
+        ["elInY", "elInY+elHeight/2"],
         [0, 1],
       ],
     },
