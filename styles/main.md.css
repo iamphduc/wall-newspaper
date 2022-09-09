@@ -38,7 +38,8 @@
   }
 
   .feeling__frame {
-    margin-right: 0;
+    margin-right: 5vw;
+    margin-left: 0;
   }
 
   /* || TIMELINE */
@@ -52,12 +53,13 @@
   .timeline__img-container {
     display: flex;
     justify-content: center;
-    min-height: 50vh;
+    min-height: 40vh;
   }
 
   .timeline__img {
     width: 80%;
     max-height: initial;
+    bottom: initial;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -90,5 +92,11 @@
     max-width: none;
     justify-self: center;
     text-align: center;
+  }
+
+  /* || ENDING */
+
+  .ending__text {
+    width: 80%;
   }
 }
