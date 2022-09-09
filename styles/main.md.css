@@ -52,8 +52,20 @@
   .timeline__img-container {
     display: flex;
     justify-content: center;
+    min-height: 50vh;
   }
 
+  .timeline__img {
+    width: 80%;
+    max-height: initial;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .timeline__content--reversed .timeline__img {
+    top: 50%;
+    left: 50%;
+  }
   .timeline__img--summer-2015 {
     bottom: 0px;
     left: 50%;
@@ -71,7 +83,6 @@
     z-index: 1;
     grid-row: 2/3;
   }
-
   .timeline__content--reversed .timeline__text {
     max-width: none;
     justify-self: center;

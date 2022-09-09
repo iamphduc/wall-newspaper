@@ -32,7 +32,6 @@ body {
   background-color: var(--main-bg);
   color: white;
   font-family: "montserrat";
-  text-justify: ;
 }
 
 /* || INTRO */
@@ -219,9 +218,9 @@ body {
 .timeline__year {
   font-size: calc(64px + 5vw);
   font-family: "mons";
-  background-color: var(--main-bg);
-  padding: 24px 0px;
+  padding: 12px 0px;
   margin: 24px 0px;
+  mix-blend-mode: screen;
 }
 
 .timeline__content {
@@ -234,18 +233,22 @@ body {
 }
 
 .timeline__img-container {
+  width: 100%;
+  min-height: 30vw;
   position: relative;
 }
 
 .timeline__img {
   width: 80%;
   min-width: 300px;
+  max-height: 25vw;
   border-radius: 24px;
-  float: right;
+  right: 0px;
   z-index: 1;
+  position: absolute;
 }
 .timeline__content--reversed .timeline__img {
-  float: left;
+  left: 0px;
 }
 .timeline__img--summer-2015 {
   width: 130%;
@@ -256,7 +259,7 @@ body {
   z-index: 2;
 }
 .timeline__img--mr-phuc {
-  width: 25vw;
+  width: 20vw;
   position: absolute;
   right: 0px;
   z-index: 2;
