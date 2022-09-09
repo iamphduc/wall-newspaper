@@ -75,6 +75,9 @@
     width: 40vw;
     right: -5vw;
   }
+  .timeline__img--gala-2019 {
+    transform: translate(-5%, 0%);
+  }
 
   .timeline__text {
     max-width: none;

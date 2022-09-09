@@ -263,7 +263,8 @@ body {
   width: 100%;
   position: absolute;
   top: 10vh;
-  opacity: 0.4;
+  opacity: 0.6;
+  z-index: -1;
 }
 
 .timeline__background-image {
@@ -275,7 +276,9 @@ body {
   font-family: "mons";
   padding: 12px 0px;
   margin: 24px 0px;
-  mix-blend-mode: screen;
+  /* mix-blend-mode: screen; */
+  background: var(--main-bg);
+  border-radius: 32px;
 }
 
 .timeline__content {
@@ -301,6 +304,9 @@ body {
   right: 0px;
   z-index: 1;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
 }
 .timeline__content--reversed .timeline__img {
   left: 0px;
@@ -319,6 +325,14 @@ body {
   right: 0px;
   z-index: 2;
 }
+.timeline__img--gala-2019 {
+  width: 110%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: translate(-10%, 15%);
+  z-index: 2;
+}
 
 .timeline__text {
   font-family: "becool";
@@ -331,6 +345,26 @@ body {
 .timeline__content--reversed .timeline__text {
   justify-self: end;
   text-align: right;
+}
+
+.timeline__container--final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline__img--final {
+  width: 100%;
+}
+
+.timeline__text--final {
+  font-family: "becool";
+  font-size: calc(18px + 2vw);
+  background: var(--main-bg);
+  color: #5cb6f9;
+  margin: 0px;
+  padding: 32px;
 }
 
 /* || ENDING */
