@@ -57,7 +57,7 @@
   .timeline__img-container {
     display: flex;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 55vw;
   }
 
   .timeline__img {
