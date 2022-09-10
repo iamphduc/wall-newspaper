@@ -18,15 +18,13 @@
   .intro__background {
     position: static;
     width: 130%;
+    margin-bottom: 20%;
   }
 
   .intro__standing {
-    z-index: 1;
+    top: initial;
+    bottom: -20vw;
     left: -10vw;
-  }
-
-  .intro__mountain-5 {
-    z-index: 1;
   }
 
   /* || FEELING */
