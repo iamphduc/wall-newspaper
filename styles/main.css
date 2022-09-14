@@ -386,6 +386,8 @@ body {
   z-index: -1;
   top: 0px;
   left: 0px;
+  opacity: 0.7;
+  mix-blend-mode: screen;
 }
 
 .ending__text {
@@ -395,4 +397,5 @@ body {
   border-radius: 24px;
   font-size: calc(14px + 0.5vw);
   text-align: justify;
+  margin-top: 5vw;
 }
